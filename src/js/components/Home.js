@@ -12,7 +12,7 @@ export const Home = (props) => {
 
         </div>
       </div>
-      <div className="col-sm-8 offset-sm-2">
+      <div className="col-sm-10 offset-sm-1">
         <div className="Home--content">
           <p>I am a reliable and resourceful full stack senior developer. I have been freelancing commercially for roughly 18 years and coding for fun for over 28 years. I additionally have experience on the creative side and enjoy all aspects of technology.</p>
           <p>I have recently taken on the role of Technical lead and have enjoyed the extra challenges involved in this. I have also moved more into enterprise CMS development. I have recently become an expert in Tridion CMS mainly for the Toyota/Lexus brand, and also AEM and the Sapient D2 front end framework for Unilever.</p>

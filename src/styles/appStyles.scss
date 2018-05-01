@@ -5,7 +5,7 @@ $pad: 5px 20px;
 $border-radius: 1em;
 $box-shadow-header: inset -30px 0px 50px 0px rgba(0,0,0,0.25);
 $box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.25);
-$box-shadow-featured: inset -30px 0px 50px 0px rgba(0,0,0,0.25);
+$box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.10);
 $box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.25);
 
 
@@ -56,11 +56,12 @@ section{
   border-radius: $border-radius $border-radius 0px 0px;
   box-shadow: $box-shadow-navigation;
   & button{
-    padding: 5px;
+    padding: 5px 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
     font-weight: bold;
+    border-radius: $border-radius $border-radius $border-radius $border-radius;
     & a{
       color:$brand-primary;
     }
@@ -92,15 +93,15 @@ section{
     margin-top: 2.0rem;
     margin-bottom: 2.0rem;
     padding:$pad;
-    color:grey;
+    color:$brand-secondary;
   }
   &--featured{
-    background-color: #e8e3da;
     color:$brand-secondary;
     padding:$pad;
     margin-bottom: 20px;
     border-radius: $border-radius $border-radius $border-radius $border-radius;
     box-shadow: $box-shadow-featured;
+    border: 1px lightgrey solid;
     & h2 {
       color:$brand-secondary;
     }
@@ -111,6 +112,7 @@ section{
   &--header{
     background-color: $brand-secondary;
     padding:$pad;
+    margin-bottom: 1rem;
     box-shadow:$box-shadow-header;
     & h2 {
       color:white;
@@ -122,6 +124,7 @@ section{
   &--header{
     background-color: $brand-secondary;
     padding:$pad;
+    margin-bottom: 1rem;
     box-shadow:$box-shadow-header;
     & h2 {
       color:white;
@@ -133,10 +136,15 @@ section{
   &--header{
     background-color: $brand-secondary;
     padding:$pad;
+    margin-bottom: 1rem;
     box-shadow:$box-shadow-header;
+    color:white;
     & h2 {
       color:white;
     }
+  }
+  &--introduction{
+    padding:$pad;
   }
 }
 
@@ -146,5 +154,5 @@ section{
   background-color: $brand-secondary;
   border-radius: 0px 0px $border-radius $border-radius;
   box-shadow:$box-shadow-footer;
-  margin-top:20px;
+
 }

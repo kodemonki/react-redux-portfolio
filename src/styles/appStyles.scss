@@ -67,6 +67,12 @@ section{
       color:$brand-primary;
     }
   }
+  &--active {
+    color:blue;
+  }
+}
+.active{
+  opacity:0.5;
 }
 
 .Header {

@@ -20,7 +20,7 @@ class App extends React.Component {
     return <Router>
       <div className="App">
         <Header/>
-        <Navigation/>
+        <Route path='/' component={Navigation}/>
         {/*<Dumb initialised={this.props.initialised}/>*/}
         <Route exact path='/' component={Home}/>
         <Route path='/projects' component={Projects}/>

@@ -1,0 +1,73 @@
+$theme-font: "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+$brand-primary: #ff6600;
+$brand-secondary: #ff9933;
+$pad: 5px 20px;
+$border-radius: 1em;
+
+body {
+  font-family: $theme-font;
+  color: $brand-primary;
+  background-color: #edede9;
+  font-size: 62.5%;
+  line-height: 1.4;
+}
+
+h1,h2,h3,h4,h5 {
+  margin:0;
+  color: $brand-primary;
+}
+
+h1 {
+  font-size: 3.0rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 2.0rem;
+  font-weight: normal;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: $brand-secondary;
+}
+a {
+  color: $brand-secondary;
+  font-size: 1rem;
+}
+
+section{
+  color: $brand-secondary;
+  font-size: 1rem;
+}
+
+.Navigation{
+  background-color:$brand-primary;
+  padding:$pad;
+  border-radius: $border-radius $border-radius 0px 0px;
+  & button{
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+}
+.Header {
+  padding:$pad;
+}
+.Footer {
+  padding:$pad;
+  background-color: $brand-secondary;
+  border-radius: 0px 0px $border-radius $border-radius;
+}
+.Home {
+  &--header{
+    background-color: $brand-secondary;
+    padding:$pad;
+    & h2 {
+      color:white;
+    }
+  }
+  &--content{
+padding:$pad;
+  }
+}

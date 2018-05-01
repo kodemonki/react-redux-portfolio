@@ -6,7 +6,10 @@ import { Dumb } from "../components/Dumb";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Navigation } from "../components/Navigation";
-import { Home } from "../components/Home"
+import { Home } from "../components/Home";
+import { Projects } from "../components/Projects";
+import { Arduino } from "../components/Arduino";
+import { Skills } from "../components/Skills";
 
 import { dumbAction } from "../actions/dumbAction";
 
@@ -20,6 +23,9 @@ class App extends React.Component {
         <Navigation/>
         {/*<Dumb initialised={this.props.initialised}/>*/}
         <Route exact path='/' component={Home}/>
+        <Route path='/projects' component={Projects}/>
+        <Route path='/arduino' component={Arduino}/>
+        <Route path='/skills' component={Skills}/>
         <Footer/>
       </div>
     </Router>;

@@ -6,7 +6,8 @@ export const Footer = (props) => {
     <div className="Footer">
       <div className="row">
         <div className="col-sm-12">
-          <p>Footer copy</p>
+          <h4>© Copyright. All rights reserved</h4>
+          <br/>
         </div>
       </div>
     </div>

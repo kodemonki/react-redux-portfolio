@@ -12,43 +12,55 @@ export const Skills = (props) => {
           <div className="Skills--introduction">
               <p>I have been freelancing commercially for roughly 18 years and coding for fun for over 28 years.</p>
           </div>
+          <div className="Skills--header">CURRENT FRONTEND STACK</div>
+          <div className="">
+              <ul>
+                  <li>Javascript</li>
+                  <li>Single Page Appication</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Webpack</li>
+                  <li>Babel</li>
+                  <li>Bootstrap</li>
+                  <li>GSAP</li>
+              </ul>
+          </div>
           <div className="Skills--header">CORE LANGUAGES</div>
           <div className="">
               <ul>
-                  <li>HTML5 / CSS3 - WC3 standard ( 6 years )</li>
+                  <li>HTML5 / CSS3 - WC3 standard ( 10 years )</li>
                   <li>Javascript ( 6 years )</li>
                   <li>PHP 4-5 OOP ( 6 years )</li>
                   <li>MySql 4-5 ( 6 years )</li>
-                  <li>Adobe Flash - 4-8, CS3-6, Creative Cloud Actionscript 1-3 ( 12 years )</li>
-                  <li>Flash remoting, AMFPHP ( 2 years )</li>
-                  <li>Flash video manipulation ( 4 years )</li>
-                  <li>Flash media server / red5 ( 1 year )</li>
-                  <li>XML ( 5 years )</li>
-                  <li>JSON ( 3 years )</li>
+                  <li>Adobe Flash ( 12 years )</li>
               </ul>
           </div>
           <div className="Skills--header" >FRAMEWORKS</div>
           <div className="">
               <ul>
+                  <li>React ( 1 year )</li>
+                  <li>Redux ( 1 year )</li>
                   <li>JQuery ( 5 years )</li>
-                  <li>JQuery Mobile ( 1 years )</li>
-                  <li>Hammer.js ( 1 year )</li>
-                  <li>AppFramework ( 1 year )</li>
-                  <li>WordPress ( 3 years )</li>
-                  <li>Flex ( 2 years )</li>
-                  <li>Robot Legs ( 1 year )</li>
-                  <li>Papervision 3D - Actionscript ( 2 year )</li>
-                  <li>CodeIgniter ( 1 year )</li>
+                  <li>Backbone ( 1 years )</li>
+                  <li>GSAP ( 5 years )</li>
               </ul>
-              </div>
-              <div className="Skills--header" >APIS</div>
-              <div className="">
+          </div>
+          <div className="Skills--header" >CMS</div>
+          <div className="">
               <ul>
-                  <li>Facebook - Actionscript, Javascript and PHP ( 2 years )</li>
-                  <li>GoogleMaps - Actionscript / Javascript ( 2 years )</li>
-                  <li>Twitter - Javascript ( 2 years )</li>
+                  <li>AEM ( 2 year )</li>
+                  <li>Tridion ( 1 year )</li>
+                  <li>WordPress ( 5 years )</li>
               </ul>
-              </div>
+          </div>
+          <div className="Skills--header" >APIS</div>
+          <div className="">
+          <ul>
+              <li>Facebook - Actionscript, Javascript and PHP ( 2 years )</li>
+              <li>GoogleMaps - Actionscript / Javascript ( 2 years )</li>
+              <li>Twitter - Javascript ( 2 years )</li>
+          </ul>
+          </div>
         </div>
       </div>
     </div>

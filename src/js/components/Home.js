@@ -9,7 +9,6 @@ export const Home = (props) => {
           <div className="Home--header">
             <h2>Home</h2>
           </div>
-
         </div>
       </div>
       <div className="col-sm-10 offset-sm-1">

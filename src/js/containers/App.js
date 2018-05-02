@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Dumb } from "../components/Dumb";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
-import { Navigation } from "../components/Navigation";
+import Navigation from "../components/Navigation";
 import { Home } from "../components/Home";
 import { Projects } from "../components/Projects";
 import { Arduino } from "../components/Arduino";
@@ -16,7 +16,6 @@ import { dumbAction } from "../actions/dumbAction";
 class App extends React.Component {
   render() {
     this.props.consoleLog('React dispatch');
-
     return <Router>
       <div className="App">
         <Header/>

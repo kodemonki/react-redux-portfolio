@@ -6,6 +6,7 @@ import {
 import {
   createLogger
 } from "redux-logger";
+import thunk from "redux-thunk";
 
 import dumbReducer from "./reducers/dumbReducer";
 
@@ -14,5 +15,5 @@ export default createStore(
     dumbReducer
   }),
   {},
-  applyMiddleware(createLogger())
+  applyMiddleware(createLogger(),thunk)
 );

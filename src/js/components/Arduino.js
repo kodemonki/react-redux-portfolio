@@ -1,7 +1,6 @@
 import React from "react";
 
 export const Arduino = (props) => {
-
   return <section className="container">
     <div className="row">
       <div className="col-sm-12">
@@ -9,7 +8,6 @@ export const Arduino = (props) => {
           <div className="Arduino--header">
             <h2>Arduino</h2>
           </div>
-
         </div>
       </div>
     </div>

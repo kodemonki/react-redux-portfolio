@@ -1,28 +1,30 @@
 import React from "react";
 import {connect} from "react-redux";
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import { Dumb } from "../components/Dumb";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import Navigation from "../components/Navigation";
 import { Home } from "../components/Home";
-import { Projects } from "../components/Projects";
+import Projects from "../components/Projects";
 import { Arduino } from "../components/Arduino";
 import { Skills } from "../components/Skills";
 
-import { dumbAction } from "../actions/dumbAction";
+import { getProjectsAction } from "../actions/getProjectsAction";
 
 class App extends React.Component {
+  componentDidMount() {
+    this.props.getProjects();
+  }
   render() {
-    this.props.consoleLog('React dispatch');
     return <Router>
       <div className="App">
         <Header/>
-        <Route path='/' component={Navigation}/>
-        {/*<Dumb initialised={this.props.initialised}/>*/}
+        <Navigation/>
         <Route exact path='/' component={Home}/>
-        <Route path='/projects' component={Projects}/>
+        <Route path='/projects' render={(props) => (
+          <Projects projects={this.props.projects}/>
+        )}/>
         <Route path='/arduino' component={Arduino}/>
         <Route path='/skills' component={Skills}/>
         <Footer/>
@@ -33,14 +35,14 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    initialised: state.dumbReducer.initialised
+    projects: state.projectsReducer.projects
   }
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    consoleLog: (message) => {
-      dispatch(dumbAction(message))
+    getProjects: () => {
+      dispatch(getProjectsAction())
     }
   }
 };

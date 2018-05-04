@@ -6,9 +6,6 @@ export const Skills = (props) => {
     <div className="row">
       <div className="col-sm-12">
         <div className="Skills">
-          <div className="Skills--header">
-            <h2>Skills</h2>
-          </div>
           <div className="Skills--introduction">
               <p>I have been freelancing commercially for roughly 18 years and coding for fun for over 28 years.</p>
           </div>
@@ -16,7 +13,7 @@ export const Skills = (props) => {
           <div className="">
               <ul>
                   <li>Javascript</li>
-                  <li>Single Page Appication</li>
+                  <li>Single Page Application</li>
                   <li>React</li>
                   <li>Redux</li>
                   <li>Webpack</li>
@@ -56,8 +53,8 @@ export const Skills = (props) => {
           <div className="Skills--header" >APIS</div>
           <div className="">
           <ul>
-              <li>Facebook - Actionscript, Javascript and PHP ( 2 years )</li>
-              <li>GoogleMaps - Actionscript / Javascript ( 2 years )</li>
+              <li>Facebook - Javascript and PHP ( 2 years )</li>
+              <li>GoogleMaps - Javascript ( 2 years )</li>
               <li>Twitter - Javascript ( 2 years )</li>
           </ul>
           </div>

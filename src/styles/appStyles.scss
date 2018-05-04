@@ -53,16 +53,14 @@ section{
 .Navigation{
   text-align: center;
   background-color:$brand-primary;
-  padding:$pad;
   border-radius: $border-radius $border-radius 0px 0px;
   box-shadow: $box-shadow-navigation;
+  padding-top:10px;
   & button{
     padding: 5px 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
     margin-right: 10px;
     font-weight: bold;
-    border-radius: $border-radius $border-radius $border-radius $border-radius;
+    border-radius: $border-radius $border-radius 0px 0px;
     & a{
       color:$brand-primary;
     }
@@ -86,44 +84,36 @@ section{
 }
 
 .Home {
-  &--header{
-    text-align: center;
-    background-color: $brand-secondary;
-    padding:$pad;
-    box-shadow:$box-shadow-header;
-    & h2 {
-      color:white;
-    }
-  }
   &--content{
-    margin-top: 2.0rem;
-    margin-bottom: 2.0rem;
-    padding:$pad;
+    margin-top: 40px;
     color:$brand-secondary;
   }
   &--featured{
     color:$brand-secondary;
     padding:$pad;
     margin-bottom: 20px;
-    //border-radius: $border-radius $border-radius $border-radius $border-radius;
-    //box-shadow: $box-shadow-featured;
-    //border: 1px lightgrey solid;
     & h2 {
-      color:$brand-secondary;
+      color:$brand-primary;
     }
   }
 }
 
 .Projects{
-  &--header{
+  &--image{
+    width:100%;
+    height:auto;
+  }
+}
+
+.Project{
+  padding:20px 0px;
+  & h3{
     text-align: center;
-    background-color: $brand-secondary;
-    padding:$pad;
-    margin-bottom: 1rem;
-    box-shadow:$box-shadow-header;
-    & h2 {
-      color:white;
-    }
+    padding-top:10px;
+  }
+  & p{
+    color:grey;
+    padding:10px;
   }
 }
 
@@ -153,6 +143,7 @@ section{
     }
   }
   &--introduction{
+    margin-top:20px;
     padding:$pad;
   }
 }
@@ -160,7 +151,6 @@ section{
 .Footer {
   text-align: center;
   color:white;
-  padding:$pad;
   background-color: $brand-secondary;
   border-radius: 0px 0px $border-radius $border-radius;
   box-shadow:$box-shadow-footer;

@@ -1,19 +1,11 @@
-import {
-  createStore,
-  combineReducers,
-  applyMiddleware
-} from "redux";
-import {
-  createLogger
-} from "redux-logger";
+import { createStore, combineReducers, applyMiddleware } from "redux";
+import { createLogger } from "redux-logger";
 import thunk from "redux-thunk";
 
-import dumbReducer from "./reducers/dumbReducer";
+import projectsReducer from "./reducers/projectsReducer";
 
 export default createStore(
-  combineReducers({
-    dumbReducer
-  }),
+  combineReducers({projectsReducer}), 
   {},
   applyMiddleware(createLogger(),thunk)
 );

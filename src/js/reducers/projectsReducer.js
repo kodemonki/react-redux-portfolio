@@ -11,7 +11,8 @@ const projectsReducer = (state = initialState, action) => {
         const newProject = {
           title:project.title.rendered,
           description:project.acf.description,
-          screenshot:project.acf.screenshot
+          screenshot:project.acf.screenshot,
+          website:project.acf.website
         };
         newProjects.push(newProject);
       });

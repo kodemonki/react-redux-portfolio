@@ -85,7 +85,7 @@ section{
 
 .Home {
   &--content{
-    margin-top: 40px;
+    margin-top: 20px;
     color:$brand-secondary;
   }
   &--featured{
@@ -99,21 +99,28 @@ section{
 }
 
 .Projects{
-  &--image{
-    width:100%;
-    height:auto;
-  }
+  padding-top:20px;
 }
 
 .Project{
-  padding:20px 0px;
+  &--image{
+    width:100%;
+    height:auto;
+    padding:10px;
+  }
   & h3{
     text-align: center;
-    padding-top:10px;
+    padding-bottom:10px;
   }
   & p{
     color:grey;
-    padding:10px;
+    margin:0;
+  }
+  & h3 a{
+    color:$brand-secondary;
+  }
+  &--link{
+
   }
 }
 

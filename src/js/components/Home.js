@@ -2,7 +2,11 @@ import React from "react";
 
 export const Home = (props) => {
   return <section className="container">
+
     <div className="row">
+      <div className="col-sm-12">
+        <div className="Home--header">Home</div>
+      </div>
       <div className="col-sm-10 offset-sm-1">
         <div className="Home--content">
           <h2>Introduction</h2>

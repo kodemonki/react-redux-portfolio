@@ -6,6 +6,7 @@ export const Skills = (props) => {
     <div className="row">
       <div className="col-sm-12">
         <div className="Skills">
+        <div className="Skills--header">SKILLS</div>
           <div className="Skills--introduction">
               <p>I have been freelancing commercially for roughly 18 years and coding for fun for over 28 years.</p>
           </div>

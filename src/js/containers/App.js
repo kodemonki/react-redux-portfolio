@@ -7,14 +7,16 @@ import { Footer } from "../components/Footer";
 import Navigation from "../components/Navigation";
 import { Home } from "../components/Home";
 import Projects from "../components/Projects";
-import { Arduino } from "../components/Arduino";
+import Arduinos from "../components/Arduinos";
 import { Skills } from "../components/Skills";
 
 import { getProjectsAction } from "../actions/getProjectsAction";
+import { getArduinosAction } from "../actions/getArduinosAction";
 
 class App extends React.Component {
   componentDidMount() {
     this.props.getProjects();
+    this.props.getArduinos();
   }
   render() {
     return <Router>
@@ -25,7 +27,9 @@ class App extends React.Component {
         <Route path='/projects' render={(props) => (
           <Projects projects={this.props.projects}/>
         )}/>
-        <Route path='/arduino' component={Arduino}/>
+        <Route path='/arduino' render={(props) => (
+          <Arduinos arduinos={this.props.arduinos}/>
+        )}/>
         <Route path='/skills' component={Skills}/>
         <Footer/>
       </div>
@@ -35,15 +39,19 @@ class App extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    projects: state.projectsReducer.projects
+    projects: state.projectsReducer.projects,
+    arduinos: state.arduinosReducer.arduinos
   }
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     getProjects: () => {
-      dispatch(getProjectsAction())
-    }
+      dispatch(getProjectsAction());
+    },
+    getArduinos: () => {
+      dispatch(getArduinosAction());
+    },
   }
 };
 

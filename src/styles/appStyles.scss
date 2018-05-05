@@ -8,7 +8,6 @@ $box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.25);
 $box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.10);
 $box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.25);
 
-
 body {
   font-family: $theme-font;
   color: $brand-primary;
@@ -84,6 +83,17 @@ section{
 }
 
 .Home {
+  &--header{
+    text-align: center;
+    background-color: $brand-secondary;
+    padding:$pad;
+    margin-bottom: 1rem;
+    box-shadow:$box-shadow-header;
+    color:white;
+    & h2 {
+      color:white;
+    }
+  }
   &--content{
     margin-top: 20px;
     color:$brand-secondary;
@@ -99,8 +109,18 @@ section{
 }
 
 .Projects{
-  padding-top:20px;
   padding-bottom:20px;
+  &--header{
+    text-align: center;
+    background-color: $brand-secondary;
+    padding:$pad;
+    margin-bottom: 1rem;
+    box-shadow:$box-shadow-header;
+    color:white;
+    & h2 {
+      color:white;
+    }
+  }
 }
 
 .Project{
@@ -121,21 +141,39 @@ section{
   & h3 a{
     color:$brand-secondary;
   }
-  &--link{
-
-  }
 }
-
+.Arduinos{
+}
 .Arduino{
+  padding-bottom:10px;
   &--header{
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
     margin-bottom: 1rem;
     box-shadow:$box-shadow-header;
+    color:white;
     & h2 {
       color:white;
     }
+  }
+  &--image{
+    width:100%;
+    height:auto;
+    margin-bottom: 1rem;
+  }
+  & h3{
+    text-align: center;
+    padding-bottom:10px;
+  }
+  & p{
+    color:grey;
+    margin:0;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  & h3 a{
+    color:$brand-secondary;
   }
 }
 

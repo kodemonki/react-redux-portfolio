@@ -11,7 +11,12 @@ export default class Projects extends React.Component {
   render() {
     return <section className="container">
     <div className="Projects">
-      <div className="row">
+    <div className="row">
+      <div className="col-sm-12" >
+        <div className="Projects--header">Projects</div>
+      </div>
+    </div>
+      <div className="row">      
             {this.props.projects.map((item, index) => {
               return <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
                 <div className="Project">

@@ -23,8 +23,6 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
     "history": "^4.7.2",
-    "jquery": "^3.3.1",
-    "popper.js": "^1.14.3",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
@@ -45,6 +43,7 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.20.3",
     "webpack": "^4.6.0",
+    "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.14",
     "webpack-dev-server": "^3.1.3"
   }

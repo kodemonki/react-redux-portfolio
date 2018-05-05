@@ -5,6 +5,9 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
   filename: "./index.html"
 });
 
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
+
 module.exports = {
   output:{
     publicPath: '/'
@@ -32,5 +35,5 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
-  plugins: [htmlWebpackPlugin]
+  plugins: [htmlWebpackPlugin,new BundleAnalyzerPlugin()]
 };

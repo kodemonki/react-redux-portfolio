@@ -100,9 +100,11 @@ section{
 
 .Projects{
   padding-top:20px;
+  padding-bottom:20px;
 }
 
 .Project{
+  padding-bottom:10px;
   &--image{
     width:100%;
     height:auto;
@@ -150,7 +152,7 @@ section{
     }
   }
   &--introduction{
-    margin-top:20px;
+    margin-top: 20px;
     padding:$pad;
   }
 }
@@ -161,5 +163,5 @@ section{
   background-color: $brand-secondary;
   border-radius: 0px 0px $border-radius $border-radius;
   box-shadow:$box-shadow-footer;
-
+  padding:$pad;
 }

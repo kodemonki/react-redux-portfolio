@@ -5,7 +5,7 @@ export const Home = (props) => {
 
     <div className="row">
       <div className="col-sm-12">
-        <div className="Home--header">Home</div>
+        <div className="Home--header">HOME</div>
       </div>
       <div className="col-sm-10 offset-sm-1">
         <div className="Home--content">

@@ -6,5 +6,5 @@ This is my main portfolio site, a React/Redux single page app, that loads JSON d
 
 ## Instructions
 
-npm install
-npm start
+1. npm install
+2. npm start

@@ -15,6 +15,7 @@ export default class Featured extends React.Component {
     }else{
       return <div>
         <img className="Home--featured-image" src={this.props.project.screenshot ? this.props.project.screenshot : undefined} />
+        <h3>{this.props.project.title}</h3>
         <p>{this.strip(this.props.project.description)}</p>
         { (this.props.project.website != '') && this.createLink(this.props.project.website)}
       </div>;

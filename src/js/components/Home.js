@@ -19,7 +19,7 @@ export default class Home extends React.Component {
           </div>
         </div>
         <div className="col-sm-12">
-          <div className="Home--header">FEATURED</div>
+          <div className="Home--header">FEATURED PROJECTS</div>
         </div>
         <div className="col-sm-12 col-md-5 offset-md-1">
           <Featured project={this.props.projects[0]}/>

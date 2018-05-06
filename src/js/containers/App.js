@@ -18,7 +18,7 @@ class App extends React.Component {
     this.props.getProjects();
   }
   render() {
-    return <Router basename="/projects/portfolio-beta">
+    return <Router basename="/">
       <div className="App">
         <Header/>
         <Navigation/>

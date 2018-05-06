@@ -15,7 +15,6 @@ const arduinosReducer = (state = initialState, action) => {
         };
         newArduinos.push(newArduino);
       });
-      console.log(newState);
       newState.arduinos = newArduinos;
       break;
     case "GET_ARDUINOS_ERROR":

@@ -7,7 +7,7 @@ export const Header = (props) => {
       <div className="row">
         <div className="col-sm-12 col-md-7">
           <h1>THOMAS JANE</h1>
-          <p>HTML5 / CSS3 / JAVASCRIPT / REACT / REDUX / AEM / WORDPRESS / PHP / MYSQL / NODE / GULP / SASS / WEBPACK / ARDUINO</p>
+          <p>HTML5 / CSS3 / JAVASCRIPT / REACT / REDUX / WEBPACK / NODE / GULP / SASS / AEM / WORDPRESS / PHP / MYSQL / ARDUINO</p>
         </div>
         <div className="col-sm-12 col-md-5" style={textAlignRight}>
           <div className="Header--contact-list">

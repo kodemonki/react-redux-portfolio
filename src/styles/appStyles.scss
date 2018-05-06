@@ -92,18 +92,19 @@ section{
 }
 
 .Header {
-  padding:$pad;
+  padding:0px 20px;;
   & a,span {
     color:$grey;
     font-size: 0.8rem
   }
 
   & h1 {
-    margin-top:10px;
+    margin-bottom:1rem;
   }
   &--contact-list{
     text-align:left;
     padding-bottom:10px;
+    margin-top: 10px;
     @media (min-width: $sm) {
       text-align:right;
     }

@@ -9,7 +9,6 @@ export default class Featured extends React.Component {
     return <h3><a className="Home--featured-link" href={website}>Visit Link</a></h3>;
   }
   getContent() {
-    console.log(this.props);
     if(this.props.project === undefined){
       return <h3>Loading...</h3>;
     }else{

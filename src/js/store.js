@@ -6,7 +6,8 @@ import projectsReducer from "./reducers/projectsReducer";
 import arduinosReducer from "./reducers/arduinosReducer";
 
 export default createStore(
-  combineReducers({projectsReducer, arduinosReducer}), 
+  combineReducers({projectsReducer, arduinosReducer}),
   {},
-  applyMiddleware(createLogger(),thunk)
+  applyMiddleware(thunk)
+  //applyMiddleware(createLogger(),thunk)
 );

@@ -7,10 +7,12 @@ $box-shadow-header: inset -30px 0px 50px 0px rgba(0,0,0,0.25);
 $box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.25);
 $box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.10);
 $box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.25);
+
 $xs:575px;
 $sm:767px;
 $md:991px;
 $lg:1199px;
+
 /*
 @media (min-width: $xs) {
     background-color: red;
@@ -109,6 +111,8 @@ section{
 
 .Home {
   &--header{
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
@@ -120,15 +124,32 @@ section{
     }
   }
   &--content{
-    margin-top: 20px;
     color:$brand-secondary;
   }
   &--featured{
     color:$brand-secondary;
     padding:$pad;
     margin-bottom: 20px;
+
     & h2 {
-      color:$brand-primary;
+      color:$brand-secondary;
+      text-align: center;
+      margin:10px;
+      font-weight: bold;
+    }
+    &-image{
+      width:100%;
+      height:auto;
+      margin-bottom: 20px;
+    }
+    &-link{
+      width:100%;
+    }
+    & h3 {
+      text-align: center;
+      & a{
+        color:$brand-secondary;
+      }
     }
   }
 }
@@ -136,6 +157,8 @@ section{
 .Projects{
   padding-bottom:20px;
   &--header{
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
@@ -172,6 +195,8 @@ section{
 .Arduino{
   padding-bottom:10px;
   &--header{
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
@@ -204,6 +229,8 @@ section{
 
 .Skills{
   &--header{
+    font-size: 1.2rem;
+    font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;

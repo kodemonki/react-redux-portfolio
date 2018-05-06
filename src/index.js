@@ -8,7 +8,6 @@ import {
 import App from "./js/containers/App";
 import store from "./js/store";
 
-//import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './styles/appStyles.scss';

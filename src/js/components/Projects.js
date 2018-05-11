@@ -13,7 +13,7 @@ export default class Projects extends React.Component {
     <div className="Projects">
     <div className="row">
       <div className="col-sm-12" >
-        <div className="Projects--header">PROJECTS</div>
+        <div className="Projects--header">Projects</div>
       </div>
     </div>
       <div className="row">

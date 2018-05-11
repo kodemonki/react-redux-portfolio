@@ -6,11 +6,11 @@ export const Skills = (props) => {
     <div className="row">
       <div className="col-sm-12">
         <div className="Skills">
-        <div className="Skills--header">SKILLS</div>
+        <div className="Skills--header">Skills</div>
           <div className="Skills--introduction">
               <p>I have been freelancing commercially for roughly 18 years and coding for fun for over 28 years.</p>
           </div>
-          <div className="Skills--header">CURRENT FRONTEND STACK</div>
+          <div className="Skills--header">Current FrontEnd Stack</div>
           <div className="">
               <ul>
                   <li>Javascript</li>
@@ -23,7 +23,7 @@ export const Skills = (props) => {
                   <li>GSAP</li>
               </ul>
           </div>
-          <div className="Skills--header">CORE LANGUAGES</div>
+          <div className="Skills--header">Core Languages</div>
           <div className="">
               <ul>
                   <li>HTML5 / CSS3 - WC3 standard ( 10 years )</li>
@@ -33,7 +33,7 @@ export const Skills = (props) => {
                   <li>Adobe Flash ( 12 years )</li>
               </ul>
           </div>
-          <div className="Skills--header" >FRAMEWORKS</div>
+          <div className="Skills--header" >Frameworks</div>
           <div className="">
               <ul>
                   <li>React ( 1 year )</li>

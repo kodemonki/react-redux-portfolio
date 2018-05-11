@@ -16,6 +16,7 @@ import { getArduinosAction } from "../actions/getArduinosAction";
 class App extends React.Component {
   componentDidMount() {
     this.props.getProjects();
+    this.props.getArduinos();
   }
   render() {
     return <Router basename="/">

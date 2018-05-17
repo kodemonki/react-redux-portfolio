@@ -6,7 +6,7 @@ const projectsReducer = (state = initialState, action) => {
   var newState = Object.assign({}, state);
   switch (action.type) {
     case "GET_PROJECTS_RESPONSE":
-      var newProjects = [].concat(newState.projects);
+      var newProjects = [];
       action.payload.data.map((project, index) => {
         const newProject = {
           title:project.title.rendered,

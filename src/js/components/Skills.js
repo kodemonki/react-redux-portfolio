@@ -27,7 +27,7 @@ export const Skills = (props) => {
           <div className="">
               <ul>
                   <li>HTML5 / CSS3 - WC3 standard ( 10 years )</li>
-                  <li>Javascript ( 6 years )</li>
+                  <li>Javascript ( 10 years )</li>
                   <li>PHP 4-5 OOP ( 6 years )</li>
                   <li>MySql 4-5 ( 6 years )</li>
                   <li>Adobe Flash ( 12 years )</li>

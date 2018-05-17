@@ -6,7 +6,7 @@ const arduinosReducer = (state = initialState, action) => {
   var newState = Object.assign({}, state);
   switch (action.type) {
     case "GET_ARDUINOS_RESPONSE":
-      var newArduinos = [].concat(newState.arduinos);
+      var newArduinos = [];
       action.payload.data.map((arduino, index) => {
         const newArduino = {
           title:arduino.title.rendered,

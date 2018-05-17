@@ -3,11 +3,11 @@ $brand-primary: #ff6600;
 $brand-secondary: #ff9933;
 $grey:grey;
 $pad: 4px 8px;
-$border-radius: 1em;
-$box-shadow-header: inset -30px 0px 50px 0px rgba(0,0,0,0.25);
-$box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.25);
-$box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.10);
-$box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.25);
+$border-radius: 0.66em;
+$box-shadow-header: inset -30px 0px 50px 0px rgba(0,0,0,0.15);
+$box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.15);
+$box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.5);
+$box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.15);
 
 $xs:575px;
 $sm:767px;
@@ -76,9 +76,9 @@ section{
   background-color:$brand-primary;
   border-radius: $border-radius $border-radius 0 0;
   box-shadow: $box-shadow-navigation;
-  padding-top:10px;
+  padding-top:7px;
   & button{
-    background-color: white;
+    background-color: #edede9;
     padding: 5px 10px;
     margin-right: 10px;
     font-weight: bold;

@@ -14,11 +14,11 @@ export const Header = (props) => {
   return <section className="container">
     <div className="Header">
       <div className="row">
-        <div className="col-sm-12 col-md-7">
+        <div className="col-sm-12 col-md-8 col-lg-7">
           <h1>THOMAS JANE</h1>
-          <p>HTML5&nbsp;/ CSS3&nbsp;/ JAVASCRIPT&nbsp;/ REACT&nbsp;/ REDUX&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/ SASS&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL&nbsp;/ ARDUINO</p>
+          <p>HTML5&nbsp;/ CSS3&nbsp;/ JAVASCRIPT&nbsp;/ REACT&nbsp;/ REDUX&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/ SASS&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL</p>
         </div>
-        <div className="col-sm-12 col-md-5" style={textAlignRight}>
+        <div className="col-sm-12 col-md-4 col-lg-5" style={textAlignRight}>
           <div className="Header--contact-list">
             <FontAwesomeIcon className="Header--icon" icon={faLinkedin} /> <a href="https://uk.linkedin.com/in/tomjane" target="_blank">https://uk.linkedin.com/in/tomjane</a><br/>
             <FontAwesomeIcon className="Header--icon" icon={faGithub} /> <a href="https://github.com/kodemonki" target="_blank">https://github.com/kodemonki</a><br/>

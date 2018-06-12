@@ -9,10 +9,10 @@ $box-shadow-navigation: inset -30px 30px 50px 0px rgba(0,0,0,0.15);
 $box-shadow-featured: inset -10px 0px 50px 0px rgba(0,0,0,0.5);
 $box-shadow-footer: inset -30px -30px 50px 0px rgba(0,0,0,0.15);
 
-$xs:575px;
-$sm:767px;
-$md:991px;
-$lg:1199px;
+$xs:576px;
+$sm:768px;
+$md:992px;
+$lg:1200px;
 
 /*
 @media (min-width: $xs) {
@@ -98,7 +98,10 @@ section{
   padding:0px 20px;;
   & a,span {
     color:$grey;
-    font-size: 0.8rem
+    font-size: 0.7rem;
+    @media (min-width: $lg) {
+        font-size: 0.8rem;
+    }
   }
   & h1 {
     margin-bottom:0.5rem;
@@ -121,11 +124,8 @@ section{
 .Home {
   &--header{
     font-size: 1.2rem;
-    //font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
-    //border-top: 2px $brand-secondary solid;
-    //border-bottom: 2px $brand-secondary solid;
     padding:$pad;
     margin-bottom: 1rem;
     box-shadow:$box-shadow-header;
@@ -192,7 +192,6 @@ section{
   padding-bottom:20px;
   &--header{
     font-size: 1.2rem;
-    //font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
@@ -214,7 +213,6 @@ section{
   }
   & h3{
     text-align: center;
-    //padding-bottom:10px;
     font-weight: bold;
     font-size:1.3rem;
   }
@@ -236,7 +234,6 @@ section{
   padding-bottom:10px;
   &--header{
     font-size: 1.2rem;
-    //font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;
@@ -271,7 +268,6 @@ section{
   color:$grey;
   &--header{
     font-size: 1.2rem;
-    //font-weight: bold;
     text-align: center;
     background-color: $brand-secondary;
     padding:$pad;

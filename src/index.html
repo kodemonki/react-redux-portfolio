@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>kodemonki</title>
   <meta charset="UTF-8">
   <meta name="description" content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Techincal Lead">
   <meta name="keywords" content="Freelance,Front End,Developer,HTML,CSS,JavaScript">
@@ -11,9 +12,23 @@
   <meta property="og:title" content="Tom Jane Portfolio"/>
   <meta property="og:site_name" content="kodemonki.com"/>
   <meta property="og:description" content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Technical Lead"/>
-    
+
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    
+
+  <script>
+  if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(registration => {
+        console.log("SW registered: ", registration);
+      })
+      .catch(registrationError => {
+        console.log("SW registration failed: ", registrationError);
+      });
+  });
+}
+</script>
 </head>
 <body>
 
@@ -26,7 +41,8 @@
     <div class="d-none d-xl-block">xl</div>
   </div>
   -->
-  <section id="App"></section>
 
+  <section id="App"></section>
+  <noscript><p>Your browser does not support JavaScript! Please visit this site with a Javascript enabled browser</p></noscript>
 </body>
 </html>

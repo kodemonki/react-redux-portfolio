@@ -8,8 +8,7 @@ import {
 import App from "./js/containers/App";
 import store from "./js/store";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import './styles/appStyles.scss';
 
 ReactDOM.render(

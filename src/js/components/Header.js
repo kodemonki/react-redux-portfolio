@@ -19,20 +19,23 @@ export const Header = props => {
             <h1>THOMAS JANE</h1>
             <p>
               HTML5&nbsp;/ CSS3&nbsp;/ JAVASCRIPT&nbsp;/ REACT&nbsp;/
-              REDUX&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/ SASS&nbsp;/
-              AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL
+              REDUX&nbsp;/ PWA&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/
+              SASS&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL
             </p>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5" style={textAlignRight}>
             <div className="Header--contact-list">
-              <FontAwesomeIcon className="Header--icon" icon={faLinkedin} />{" "}
-              <a href="https://uk.linkedin.com/in/tomjane" target="_blank">
-                https://uk.linkedin.com/in/tomjane
-              </a>
-              <br />
               <FontAwesomeIcon className="Header--icon" icon={faGithub} />{" "}
               <a href="https://github.com/kodemonki" target="_blank">
-                https://github.com/kodemonki
+                www.github.com/kodemonki
+              </a>
+              <br />
+              <FontAwesomeIcon
+                className="Header--icon"
+                icon={faLinkedin}
+              />{" "}
+              <a href="https://uk.linkedin.com/in/tomjane" target="_blank">
+                uk.linkedin.com/in/tomjane
               </a>
               <br />
               <FontAwesomeIcon className="Header--icon" icon={faGoogle} />{" "}

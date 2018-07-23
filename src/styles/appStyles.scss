@@ -1,19 +1,4 @@
-$theme-font: HelveticaNeue, Helvetica, Arial, sans-serif;
-$brand-primary: #ff6600;
-$brand-secondary: #ff9933;
-$grey: grey;
-$pad: 4px 8px;
-$border-radius: 0.66em;
-$box-shadow-header: inset -30px 0px 50px 0px rgba(0, 0, 0, 0.15);
-$box-shadow-navigation: inset -30px 30px 50px 0px rgba(0, 0, 0, 0.15);
-$box-shadow-featured: inset -10px 0px 50px 0px rgba(0, 0, 0, 0.5);
-$box-shadow-footer: inset -30px -30px 50px 0px rgba(0, 0, 0, 0.15);
-
-$xs: 576px;
-$sm: 768px;
-$md: 992px;
-$lg: 1200px;
-
+@import "./globals.scss";
 /*
 @media (min-width: $xs) {
     background-color: red;
@@ -32,7 +17,7 @@ $lg: 1200px;
 body {
   font-family: $theme-font;
   color: $brand-primary;
-  background-color: #edede9;
+  background-color: white;
   font-size: 62.5%;
   line-height: 1.2;
   -webkit-perspective: 1000;
@@ -53,252 +38,22 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: bold;
 }
 h3 {
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: $brand-secondary;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 h4 {
-  font-size: 1rem;
-  font-weight: normal;
-  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 a {
-  color: $brand-secondary;
+  color: $brand-primary;
   font-size: 1rem;
 }
 
 section {
-  color: $brand-secondary;
+  color: $brand-primary;
   font-size: 1rem;
-}
-
-.Navigation {
-  text-align: center;
-  background-color: $brand-primary;
-  border-radius: $border-radius $border-radius 0 0;
-  box-shadow: $box-shadow-navigation;
-  padding-top: 7px;
-  & button {
-    background-color: #edede9;
-    padding: 5px 10px;
-    margin-left: 3px;
-    margin-right: 3px;
-    font-weight: bold;
-    border-radius: $border-radius $border-radius 0px 0px;
-    & a {
-      color: $brand-primary;
-    }
-  }
-}
-
-.active {
-  text-decoration: underline;
-}
-
-.Header {
-  font-size: 1.2rem;
-  padding: 0px 20px;
-  & a,
-  span {
-    color: $grey;
-    font-size: 1.1rem;
-    @media (min-width: $lg) {
-      font-size: 1.1rem;
-    }
-  }
-  & h1 {
-    margin-bottom: 2rem;
-  }
-  &--contact-list {
-    text-align: left;
-    margin-top: 10px;
-    line-height: 1.38;
-    @media (min-width: $md) {
-      text-align: right;
-    }
-  }
-  &--icon {
-    font-size: 1.2rem;
-    margin-bottom: -3px;
-    color: $brand-primary;
-  }
-}
-
-.Home {
-  &--header {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: $brand-secondary;
-    padding: $pad;
-    margin-bottom: 1rem;
-    box-shadow: $box-shadow-header;
-    color: white;
-    & h2 {
-      color: white;
-    }
-  }
-  &--sub-header {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    padding: $pad;
-    margin-bottom: 1rem;
-    color: $brand-secondary;
-    & h2 {
-      color: white;
-    }
-  }
-  &--content {
-    color: $grey;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    &-face {
-      width: 100%;
-      height: auto;
-    }
-  }
-  &--featured {
-    font-size: 1.1rem;
-    color: $grey;
-    padding: $pad;
-    margin-bottom: 20px;
-    p {
-      margin-bottom: 0px;
-    }
-    & h2 {
-      color: $brand-secondary;
-      text-align: center;
-      margin: 10px;
-      font-weight: bold;
-    }
-    &-image {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    &-link {
-      width: 100%;
-      font-weight: bold;
-    }
-    & h3 {
-      font-size: 1.3rem;
-      font-weight: bold;
-      text-align: center;
-      margin-bottom: 10px;
-      & a {
-        color: $brand-secondary;
-      }
-    }
-  }
-}
-.Projects {
-  padding-bottom: 20px;
-  &--header {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: $brand-secondary;
-    padding: $pad;
-    margin-bottom: 1rem;
-    box-shadow: $box-shadow-header;
-    color: white;
-    & h2 {
-      color: white;
-    }
-  }
-}
-
-.Project {
-  padding-bottom: 10px;
-  &--image {
-    width: 100%;
-    height: auto;
-    padding: 10px;
-  }
-  & h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3rem;
-  }
-  & p {
-    font-size: 0.9rem;
-    color: $grey;
-    margin: 0;
-    padding: 10px;
-  }
-  & h3 a {
-    color: $brand-secondary;
-    font-weight: bold;
-  }
-}
-
-.Arduinos {
-}
-.Arduino {
-  padding-bottom: 10px;
-  &--header {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: $brand-secondary;
-    padding: $pad;
-    margin-bottom: 1rem;
-    box-shadow: $box-shadow-header;
-    color: white;
-    & h2 {
-      color: white;
-    }
-  }
-  &--image {
-    width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  & h3 {
-    text-align: center;
-    padding-bottom: 10px;
-  }
-  & p {
-    color: $grey;
-    margin: 0;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  & h3 a {
-    color: $brand-secondary;
-  }
-}
-
-.Skills {
-  color: $grey;
-  &--header {
-    font-size: 1.2rem;
-    text-align: center;
-    background-color: $brand-secondary;
-    padding: $pad;
-    margin-bottom: 1rem;
-    box-shadow: $box-shadow-header;
-    color: white;
-    & h2 {
-      color: white;
-    }
-  }
-  &--introduction {
-    margin-top: 20px;
-    padding: $pad;
-  }
-}
-
-.Footer {
-  text-align: center;
-  color: white;
-  background-color: $brand-secondary;
-  border-radius: 0px 0px $border-radius $border-radius;
-  box-shadow: $box-shadow-footer;
-  padding: $pad;
-  & h4 {
-    color: white;
-    font-size: 1rem;
-  }
 }

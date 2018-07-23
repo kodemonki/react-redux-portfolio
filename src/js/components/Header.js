@@ -9,6 +9,8 @@ import faSkype from "@fortawesome/fontawesome-free-brands/faSkype";
 
 import faEnvelope from "@fortawesome/fontawesome-free-regular/faEnvelope";
 
+import "../../styles/Header.scss";
+
 export const Header = props => {
   const textAlignRight = { textAlign: "right" };
   return (

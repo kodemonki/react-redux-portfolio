@@ -1,0 +1,18 @@
+@import "./Globals.scss";
+
+.Skills {
+  color: $grey;
+  &--header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border: $border-style;
+    padding: $pad;
+    margin-bottom: 1rem;
+    color: $brand-primary;
+  }
+  &--introduction {
+    text-align: center;
+    padding: $pad;
+  }
+}

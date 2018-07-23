@@ -9,13 +9,13 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 
 const WorkboxPlugin = require("workbox-webpack-plugin");
 
-const workboxPlugin1 = new WorkboxPlugin.GenerateSW({
+const workboxPlugin = new WorkboxPlugin.GenerateSW({
   swDest: "sw.js",
   clientsClaim: true,
   skipWaiting: true,
   runtimeCaching: [
     {
-      urlPattern: new RegExp("kodemonki.com"),
+      urlPattern: new RegExp("https://"),
       handler: "cacheFirst"
     }
   ]
@@ -35,11 +35,13 @@ const webpackPwaManifest = new WebpackPwaManifest({
   icons: [
     {
       src: path.resolve("src/images/icon.jpg"),
-      sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+      sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+      destination: path.join("images", "icons")
     },
     {
       src: path.resolve("src/images/large-icon.jpg"),
-      size: "1024x1024" // you can also use the specifications pattern
+      size: "1024x1024", // you can also use the specifications pattern
+      destination: path.join("images", "icons")
     }
   ]
 });
@@ -64,11 +66,16 @@ module.exports = {
       {
         test: /\.(s*)css$/,
         exclude: /node_modules/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: ["file-loader"]
+        use: [
+          {
+            loader: "file-loader",
+            options: { outputPath: "images/" }
+          }
+        ]
       },
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -77,18 +84,6 @@ module.exports = {
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: "url-loader"
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "fonts/"
-            }
-          }
-        ]
       }
     ]
   },
@@ -106,5 +101,5 @@ module.exports = {
       }
     }
   },
-  plugins: [htmlWebpackPlugin, workboxPlugin1, webpackPwaManifest]
+  plugins: [htmlWebpackPlugin, workboxPlugin, webpackPwaManifest]
 };

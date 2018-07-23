@@ -1,12 +1,13 @@
 import React from "react";
 
+import "../../styles/Skills.scss";
+
 export const Skills = props => {
   return (
     <section className="container">
       <div className="row">
         <div className="col-sm-12">
           <div className="Skills">
-            <div className="Skills--header">Skills</div>
             <div className="Skills--introduction">
               <p>
                 I have been freelancing commercially for roughly 18 years and

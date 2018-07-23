@@ -1,0 +1,25 @@
+@import "./Globals.scss";
+
+.Navigation {
+  border: $border-style;
+  border-top: none;
+  text-align: center;
+  & button {
+    background-color: #edede9;
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    box-shadow: none;
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    & a {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.active {
+  text-decoration: underline !important;
+}

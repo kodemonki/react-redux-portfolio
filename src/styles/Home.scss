@@ -1,0 +1,97 @@
+@import "./Globals.scss";
+
+.Home {
+  &--header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border: $border-style;
+    border-top: none;
+    padding: $pad;
+    color: $brand-primary;
+    & h2 {
+      color: $brand-primary;
+    }
+  }
+  &--divider {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border: $border-style;
+    padding: $pad;
+    color: $brand-primary;
+    & h2 {
+      color: $brand-primary;
+    }
+  }
+  &--sub-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: $pad;
+    margin-bottom: 1rem;
+    color: $brand-primary;
+    & h2 {
+      color: white;
+    }
+  }
+  &--content {
+    color: $grey;
+    border-top: none;
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    & p {
+      font-size: 1.1rem;
+      color: $grey;
+    }
+    &-face {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &--panel {
+    padding: 20px;
+    background-color: white;
+    & p {
+      color: $grey;
+    }
+  }
+  &--featured {
+    font-size: 1.1rem;
+    color: $grey;
+    padding: $pad;
+    border: $border-style;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: 400px;
+    p {
+      margin-bottom: 0px;
+      min-height: 125px;
+    }
+    & h2 {
+      color: $brand-primary;
+      text-align: center;
+      margin: 10px;
+      font-weight: bold;
+    }
+    &-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    &-link {
+      width: 100%;
+      font-weight: bold;
+    }
+    & h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 20px;
+      & a {
+        color: $brand-primary;
+      }
+    }
+  }
+}

@@ -6,23 +6,17 @@
     font-weight: bold;
     text-align: center;
     border: $border-style;
+    border-color: inherit;
     border-top: none;
     padding: $pad;
-    color: $brand-primary;
-    & h2 {
-      color: $brand-primary;
-    }
   }
   &--divider {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     border: $border-style;
+    border-color: inherit;
     padding: $pad;
-    color: $brand-primary;
-    & h2 {
-      color: $brand-primary;
-    }
   }
   &--sub-header {
     font-size: 1.2rem;
@@ -30,20 +24,14 @@
     text-align: center;
     padding: $pad;
     margin-bottom: 1rem;
-    color: $brand-primary;
-    & h2 {
-      color: white;
-    }
   }
   &--content {
-    color: $grey;
     border-top: none;
     width: 100%;
     display: inline-block;
     font-size: 0;
     & p {
       font-size: 1.1rem;
-      color: $grey;
     }
     &-face {
       width: 100%;
@@ -53,15 +41,12 @@
   &--panel {
     padding: 20px;
     background-color: white;
-    & p {
-      color: $grey;
-    }
   }
   &--featured {
     font-size: 1.1rem;
-    color: $grey;
     padding: $pad;
     border: $border-style;
+    border-color: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: 400px;
@@ -70,7 +55,6 @@
       min-height: 125px;
     }
     & h2 {
-      color: $brand-primary;
       text-align: center;
       margin: 10px;
       font-weight: bold;
@@ -89,9 +73,6 @@
       font-weight: bold;
       text-align: center;
       margin: 20px;
-      & a {
-        color: $brand-primary;
-      }
     }
   }
 }

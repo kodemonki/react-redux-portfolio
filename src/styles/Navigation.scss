@@ -2,10 +2,10 @@
 
 .Navigation {
   border: $border-style;
+  border-color: inherit;
   border-top: none;
   text-align: center;
-  & button {
-    background-color: #edede9;
+  & a {
     padding: 5px 10px;
     border: none;
     font-weight: bold;
@@ -13,10 +13,8 @@
     background-image: none;
     outline: 0;
     -webkit-box-shadow: none;
-    & a {
-      color: $brand-primary;
-      text-decoration: none;
-    }
+    display: inline-block;
+    text-decoration: none;
   }
 }
 

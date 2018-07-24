@@ -1,5 +1,7 @@
 import React from "react";
 
+import { DuotoneImage } from "react-duotone";
+
 import Featured from "./Featured";
 
 import "../../styles/Home.scss";
@@ -13,7 +15,12 @@ export default class Home extends React.Component {
         <div className="row">
           <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-3">
             <div className="Home--panel">
-              <img src={Myface} className="Home--content-face" alt="my face" />
+              <DuotoneImage
+                className="Home--content-face"
+                src={Myface}
+                primaryColor="#ffffff"
+                secondaryColor={this.props.color}
+              />
             </div>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-8 col-xl-9">
@@ -40,10 +47,16 @@ export default class Home extends React.Component {
             <div className="Home--divider">Featured Projects</div>
           </div>
           <div className="col-sm-12 col-md-5 offset-md-1">
-            <Featured project={this.props.projects[0]} />
+            <Featured
+              project={this.props.projects[0]}
+              color={this.props.color}
+            />
           </div>
           <div className="col-sm-12 col-md-5">
-            <Featured project={this.props.projects[1]} />
+            <Featured
+              project={this.props.projects[1]}
+              color={this.props.color}
+            />
           </div>
         </div>
       </section>

@@ -3,11 +3,10 @@
 .Footer {
   text-align: center;
   font-weight: bold;
-  color: $brand-primary;
   border: $border-style;
+  border-color: inherit;
   padding: $pad;
   & h4 {
-    color: $brand-primary;
     font-size: 1rem;
     font-weight: bold;
   }

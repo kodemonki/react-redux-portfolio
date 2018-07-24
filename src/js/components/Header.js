@@ -19,11 +19,11 @@ export const Header = props => {
         <div className="row">
           <div className="col-sm-12 col-md-12 col-lg-7">
             <h1>THOMAS JANE</h1>
-            <p>
+            <div>
               HTML5&nbsp;/ CSS3&nbsp;/ JAVASCRIPT&nbsp;/ REACT&nbsp;/
               REDUX&nbsp;/ PWA&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/
               SASS&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL
-            </p>
+            </div>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-5" style={textAlignRight}>
             <div className="Header--contact-list">

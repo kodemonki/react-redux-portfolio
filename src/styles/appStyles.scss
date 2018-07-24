@@ -21,6 +21,7 @@ body {
   font-size: 62.5%;
   line-height: 1.2;
   -webkit-perspective: 1000;
+  border-color: $brand-primary;
 }
 
 h1,
@@ -29,7 +30,6 @@ h3,
 h4,
 h5 {
   margin: 0;
-  color: $brand-primary;
 }
 
 h1 {
@@ -48,12 +48,14 @@ h4 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+p {
+  color: $grey;
+}
 a {
-  color: $brand-primary;
+  color: inherit;
   font-size: 1rem;
 }
 
 section {
-  color: $brand-primary;
   font-size: 1rem;
 }

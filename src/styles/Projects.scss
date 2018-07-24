@@ -2,42 +2,37 @@
 
 .Projects {
   padding-bottom: 20px;
-  color: $grey;
   &--introduction {
     text-align: center;
     padding: $pad;
-  }
-  &--introduction p {
-    color: $grey;
   }
   &--header {
     font-size: 1.2rem;
     text-align: center;
     border: $border-style;
+    border-color: inherit;
     border-top: none;
     padding: $pad;
     margin-bottom: 1rem;
     color: $brand-primary;
-    & h2 {
-      color: white;
-    }
   }
   &--divider {
     font-size: 1.2rem;
     text-align: center;
     border: $border-style;
+    border-color: inherit;
     padding: $pad;
     margin-bottom: 1rem;
-    color: $brand-primary;
-    & h2 {
-      color: white;
-    }
   }
 }
 
 .Project {
   padding-bottom: 10px;
   border: $border-style;
+  border-color: inherit;
+  margin-bottom: 20px;
+  min-height: 400px;
+
   &--image {
     width: 100%;
     height: auto;
@@ -50,12 +45,10 @@
   }
   & p {
     font-size: 0.9rem;
-    color: $grey;
     margin: 0;
     padding: 10px;
   }
   & h3 a {
-    color: $brand-primary;
     font-weight: bold;
   }
 }

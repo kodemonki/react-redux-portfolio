@@ -4,9 +4,9 @@
   font-size: 1.2rem;
   padding: 0px 20px;
   border: $border-style;
+  border-color: inherit;
   & a,
   span {
-    color: $brand-primary;
     font-size: 1.1rem;
     @media (min-width: $lg) {
       font-size: 1.1rem;
@@ -26,6 +26,5 @@
   &--icon {
     font-size: 1.2rem;
     margin-bottom: -3px;
-    color: $brand-primary;
   }
 }

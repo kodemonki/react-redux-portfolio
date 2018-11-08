@@ -16,6 +16,7 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <script>
+
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -30,23 +31,23 @@ if ("serviceWorker" in navigator) {
 }
 
 var sheet = (function() {
-	var style = document.createElement("style");
-	style.appendChild(document.createTextNode(""));
-	document.head.appendChild(style);
-	return style.sheet;
+  var style = document.createElement("style");
+  style.appendChild(document.createTextNode(""));
+  document.head.appendChild(style);
+  return style.sheet;
 })();
 
-function getContrastYIQ(hexcolor){
-	var r = parseInt(hexcolor.substr(0,2),16);
-	var g = parseInt(hexcolor.substr(2,2),16);
-	var b = parseInt(hexcolor.substr(4,2),16);
-	var yiq = ((r*299)+(g*587)+(b*114))/1000;
-	return (yiq >= (128)) ? 'black' : 'white';
+function getContrastYIQ(hexcolor) {
+  var r = parseInt(hexcolor.substr(0, 2), 16);
+  var g = parseInt(hexcolor.substr(2, 2), 16);
+  var b = parseInt(hexcolor.substr(4, 2), 16);
+  var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+  return yiq >= 128 ? "black" : "white";
 }
 
 function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '';
+  var letters = "0123456789ABCDEF";
+  var color = "";
   for (var i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
   }
@@ -54,22 +55,21 @@ function getRandomColor() {
 }
 
 function addCSSRule(sheet, selector, rules, index) {
-	if("insertRule" in sheet) {
-		sheet.insertRule(selector + "{" + rules + "}", index);
-	}
-	else if("addRule" in sheet) {
-		sheet.addRule(selector, rules, index);
-	}
+  if ("insertRule" in sheet) {
+    sheet.insertRule(selector + "{" + rules + "}", index);
+  } else if ("addRule" in sheet) {
+    sheet.addRule(selector, rules, index);
+  }
 }
 
 var tempColor = getRandomColor();
-while(getContrastYIQ(tempColor) == 'black'){
-  tempColor = getRandomColor()
+while (getContrastYIQ(tempColor) == "black") {
+  tempColor = getRandomColor();
 }
-const initialColorState = {color: '#'+tempColor};
 
-addCSSRule(sheet, "body", "color: "+initialColorState.color+" !important", 0);
+addCSSRule(sheet, "body", "color: #" + tempColor + " !important", 0);
 
+const initialColorState = { color: "#" + tempColor };
 </script>
 </head>
 <body>

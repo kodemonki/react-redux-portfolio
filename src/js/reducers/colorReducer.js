@@ -1,7 +1,8 @@
 const colorReducer = (state = initialColorState, action) => {
-  var newState = Object.assign({}, state);
+  let newState = state;
   switch (action.type) {
     case "SET_COLOR":
+      newState = Object.assign({}, state);
       newState.color = action.payload;
       break;
   }

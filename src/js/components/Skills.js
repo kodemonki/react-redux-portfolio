@@ -10,8 +10,8 @@ export const Skills = props => {
           <div className="Skills">
             <div className="Skills--introduction">
               <p>
-                I have been freelancing commercially for roughly 18 years and
-                coding for fun for over 28 years.
+                I have been freelancing commercially for roughly 20 years and
+                coding for fun for over 29 years.
               </p>
             </div>
             <div className="Skills--header">Current FrontEnd Stack</div>
@@ -52,8 +52,9 @@ export const Skills = props => {
             <div className="">
               <ul>
                 <li>AEM ( 2 year )</li>
-                <li>Tridion ( 1 year )</li>
                 <li>WordPress ( 5 years )</li>
+                <li>Umbraco ( 1 year )</li>
+                <li>Tridion ( 1 year )</li>
               </ul>
             </div>
             <div className="Skills--header">APIS</div>

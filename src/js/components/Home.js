@@ -15,12 +15,7 @@ export default class Home extends React.Component {
         <div className="row">
           <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-3">
             <div className="Home--panel">
-              <DuotoneImage
-                className="Home--content-face"
-                src={Myface}
-                primaryColor="#ffffff"
-                secondaryColor={this.props.color}
-              />
+              <img className="Home--content-face" alt="Face" src={Myface} />
             </div>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-8 col-xl-9">

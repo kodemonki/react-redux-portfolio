@@ -13,6 +13,7 @@ import "../../styles/Header.scss";
 
 export const Header = props => {
   const textAlignRight = { textAlign: "right" };
+
   return (
     <section className="container">
       <div className="Header">

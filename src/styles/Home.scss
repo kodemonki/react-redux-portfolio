@@ -44,12 +44,13 @@
   }
   &--featured {
     font-size: 1.1rem;
-    padding: $pad;
+    padding: $padEven;
     border: $border-style;
     border-color: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
     min-height: 400px;
+
     p {
       margin-bottom: 0px;
       min-height: 125px;
@@ -73,6 +74,7 @@
       font-weight: bold;
       text-align: center;
       margin: 20px;
+      min-height: 48px;
     }
   }
 }

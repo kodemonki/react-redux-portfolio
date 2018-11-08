@@ -8,13 +8,23 @@ export default class Projects extends React.Component {
     return doc.body.textContent || "";
   }
   createLink(website) {
-    return (
-      <h3>
-        <a className="Project--link" href={website}>
-          Visit Link
-        </a>
-      </h3>
-    );
+    if (website == "") {
+      return (
+        <h4>
+          <div className="Project--link">
+            <br />
+          </div>
+        </h4>
+      );
+    } else {
+      return (
+        <h4>
+          <a className="Project--link" href={website}>
+            Visit Link
+          </a>
+        </h4>
+      );
+    }
   }
   render() {
     return (
@@ -41,7 +51,7 @@ export default class Projects extends React.Component {
                     />
                     <h3>{item.title}</h3>
                     <p>{this.strip(item.description)}</p>
-                    {item.website != "" && this.createLink(item.website)}
+                    {this.createLink(item.website)}
                   </div>
                 </div>
               );

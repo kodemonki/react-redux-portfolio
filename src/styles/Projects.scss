@@ -1,7 +1,9 @@
 @import "./Globals.scss";
 
 .Projects {
+  padding: $pad;
   padding-bottom: 20px;
+
   &--introduction {
     text-align: center;
     padding: $pad;
@@ -27,6 +29,7 @@
 }
 
 .Project {
+  padding: $pad;
   padding-bottom: 10px;
   border: $border-style;
   border-color: inherit;
@@ -42,13 +45,31 @@
     text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
+    min-height: 72px;
+  }
+  & h3 a {
+    font-weight: bold;
+  }
+  & h4 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
   }
   & p {
     font-size: 0.9rem;
     margin: 0;
     padding: 10px;
-  }
-  & h3 a {
-    font-weight: bold;
+    min-height: auto;
+
+    @media (min-width: $sm) {
+      min-height: 250px;
+    }
+    @media (min-width: $md) {
+      min-height: 250px;
+    }
+    @media (min-width: $lg) {
+      min-height: 200px;
+    }
   }
 }

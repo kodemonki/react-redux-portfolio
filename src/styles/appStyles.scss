@@ -55,7 +55,10 @@ a {
   color: inherit;
   font-size: 1rem;
 }
-
+ul,
+li {
+  color: $grey;
+}
 section {
   font-size: 1rem;
 }

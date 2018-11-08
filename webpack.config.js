@@ -12,13 +12,13 @@ const WorkboxPlugin = require("workbox-webpack-plugin");
 const workboxPlugin = new WorkboxPlugin.GenerateSW({
   swDest: "sw.js",
   clientsClaim: true,
-  skipWaiting: true,
-  runtimeCaching: [
+  skipWaiting: true
+  /*runtimeCaching: [
     {
       urlPattern: new RegExp("https://"),
       handler: "cacheFirst"
     }
-  ]
+  ]*/
 });
 
 const WebpackPwaManifest = require("webpack-pwa-manifest");

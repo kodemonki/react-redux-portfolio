@@ -6,7 +6,8 @@ import Featured from "./Featured";
 
 import "../../styles/Home.scss";
 
-import Myface from "../../images/myface.jpg";
+const Myface = require('../../images/myface.jpg');
+
 
 export default class Home extends React.Component {
   render() {

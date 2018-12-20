@@ -1,18 +1,4 @@
 @import "./globals.scss";
-/*
-@media (min-width: $xs) {
-    background-color: red;
-}
-@media (min-width: $sm) {
-    background-color: green;
-}
-@media (min-width: $md) {
-    background-color: blue;
-}
-@media (min-width: $lg) {
-    background-color: yellow;
-}
-*/
 
 body {
   font-family: $theme-font;
@@ -36,29 +22,36 @@ h1 {
   font-size: 3.4rem;
   font-weight: bold;
 }
+
 h2 {
   font-size: 2rem;
   font-weight: bold;
 }
+
 h3 {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
 h4 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 p {
   color: $grey;
 }
+
 a {
   color: inherit;
   font-size: 1rem;
 }
-ul,
-li {
+
+li,
+ul {
   color: $grey;
 }
+
 section {
   font-size: 1rem;
 }

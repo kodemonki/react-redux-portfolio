@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import "../../styles/Arduinos.scss";
 
@@ -19,6 +20,13 @@ export default class Arduinos extends React.Component {
   render() {
     return (
       <section className="container">
+        <Helmet>
+          <title>Arduinos</title>
+          <meta
+            name="description"
+            content="Examples of Arduino by Tom Jane, Developer"
+          />
+        </Helmet>
         <div className="row">
           <div className="col-sm-12">
             <div className="Arduinos--introduction">

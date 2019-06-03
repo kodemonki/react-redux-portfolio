@@ -1,6 +1,5 @@
 import React from "react";
-
-import { DuotoneImage } from "react-duotone";
+import { Helmet } from "react-helmet";
 
 import Featured from "./Featured";
 
@@ -12,13 +11,20 @@ export default class Home extends React.Component {
   render() {
     return (
       <section className="container">
-        <div className="row">
-          <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-0 col-lg-4 col-xl-3">
+        <Helmet>
+          <title>Home</title>
+          <meta
+            name="description"
+            content="Introduction to the portfolio of Tom Jane, Developer"
+          />
+        </Helmet>
+        <div className="Home--row">
+          <div className="Home--left-section">
             <div className="Home--panel">
               <img className="Home--content-face" alt="Face" src={Myface} />
             </div>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-8 col-xl-9">
+          <div className="Home--right-section">
             <div className="Home--panel">
               <h4>
                 <strong>Introduction</strong>
@@ -38,21 +44,15 @@ export default class Home extends React.Component {
               </p>
             </div>
           </div>
-          <div className="col-sm-12 col-lg-12">
-            <div className="Home--divider">Featured Projects</div>
-          </div>
-          <div className="col-sm-12 col-md-5 offset-md-1">
-            <Featured
-              project={this.props.projects[0]}
-              color={this.props.color}
-            />
-          </div>
-          <div className="col-sm-12 col-md-5">
-            <Featured
-              project={this.props.projects[1]}
-              color={this.props.color}
-            />
-          </div>
+        </div>
+        <div className="col-sm-12 col-lg-12">
+          <div className="Home--divider">Featured Projects</div>
+        </div>
+        <div className="col-sm-12 col-md-5 offset-md-1">
+          <Featured project={this.props.projects[0]} color={this.props.color} />
+        </div>
+        <div className="col-sm-12 col-md-5">
+          <Featured project={this.props.projects[1]} color={this.props.color} />
         </div>
       </section>
     );

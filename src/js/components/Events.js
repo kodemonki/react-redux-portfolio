@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import "../../styles/Events.scss";
 
@@ -9,6 +10,13 @@ const Event3 = require("../../images/event3.jpg");
 export const Events = props => {
   return (
     <section className="container">
+      <Helmet>
+        <title>Events</title>
+        <meta
+          name="description"
+          content="Examples of Events by Tom Jane, Developer"
+        />
+      </Helmet>
       <div className="row">
         <div className="col-sm-12">
           <div className="Events">

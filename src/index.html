@@ -1,88 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>kodemonki.com</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Techincal Lead"
+    />
+    <meta
+      name="keywords"
+      content="Freelance,Front End,Developer,HTML,CSS,JavaScript"
+    />
+    <meta name="author" content="Tom Jane" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <title>kodemonki.com</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Techincal Lead">
-  <meta name="keywords" content="Freelance,Front End,Developer,HTML,CSS,JavaScript">
-  <meta name="author" content="Tom Jane">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Tom Jane Portfolio" />
+    <meta property="og:site_name" content="kodemonki.com" />
+    <meta
+      property="og:description"
+      content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Technical Lead"
+    />
 
-  <meta property="og:title" content="Tom Jane Portfolio" />
-  <meta property="og:site_name" content="kodemonki.com" />
-  <meta property="og:description" content="Freelance portfolio for Tom Jane, Front End Full Stack Developer and Technical Lead" />
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
-  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("/sw.js")
-          .then(registration => {
-            //console.log("SW registered: ", registration);
-          })
-          .catch(registrationError => {
-            //console.log("SW registration failed: ", registrationError);
-          });
-      });
-    }
-
-    var sheet = (function() {
-      var style = document.createElement("style");
-      style.appendChild(document.createTextNode(""));
-      document.head.appendChild(style);
-      return style.sheet;
-    })();
-
-    function getContrastYIQ(hexcolor) {
-      var r = parseInt(hexcolor.substr(0, 2), 16);
-      var g = parseInt(hexcolor.substr(2, 2), 16);
-      var b = parseInt(hexcolor.substr(4, 2), 16);
-      var yiq = (r * 299 + g * 587 + b * 114) / 1000;
-      return yiq >= 128 ? "black" : "white";
-    }
-
-    function getRandomColor() {
-      var letters = "0123456789ABCDEF";
-      var color = "";
-      for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/sw.js")
+            .then(registration => {
+              //console.log("SW registered: ", registration);
+            })
+            .catch(registrationError => {
+              //console.log("SW registration failed: ", registrationError);
+            });
+        });
       }
-      return color;
-    }
 
-    function addCSSRule(sheet, selector, rules, index) {
-      if ("insertRule" in sheet) {
-        sheet.insertRule(selector + "{" + rules + "}", index);
-      } else if ("addRule" in sheet) {
-        sheet.addRule(selector, rules, index);
+      var sheet = (function() {
+        var style = document.createElement("style");
+        style.appendChild(document.createTextNode(""));
+        document.head.appendChild(style);
+        return style.sheet;
+      })();
+
+      function getContrastYIQ(hexcolor) {
+        var r = parseInt(hexcolor.substr(0, 2), 16);
+        var g = parseInt(hexcolor.substr(2, 2), 16);
+        var b = parseInt(hexcolor.substr(4, 2), 16);
+        var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+        return yiq >= 128 ? "black" : "white";
       }
-    }
 
-    var tempColor = getRandomColor();
-    while (getContrastYIQ(tempColor) == "black") {
-      tempColor = getRandomColor();
-    }
+      function getRandomColor() {
+        var letters = "0123456789ABCDEF";
+        var color = "";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+      }
 
-    addCSSRule(sheet, "body", "color: #" + tempColor + " !important", 0);
+      function addCSSRule(sheet, selector, rules, index) {
+        if ("insertRule" in sheet) {
+          sheet.insertRule(selector + "{" + rules + "}", index);
+        } else if ("addRule" in sheet) {
+          sheet.addRule(selector, rules, index);
+        }
+      }
 
-    const initialColorState = {
-      color: "#" + tempColor
-    };
-  </script>
+      var tempColor = getRandomColor();
+      while (getContrastYIQ(tempColor) == "black") {
+        tempColor = getRandomColor();
+      }
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-</head>
+      addCSSRule(sheet, "body", "color: #" + tempColor + " !important", 0);
 
-<body>
-  <section id="App"></section>
-  <noscript>
-    <p>Your browser does not support JavaScript! Please visit this site with a Javascript enabled browser</p>
-  </noscript>
-</body>
+      const initialColorState = {
+        color: "#" + tempColor
+      };
+    </script>
 
+    <!--
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap-grid.min.css"
+      />
+    -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section id="App"></section>
+    <noscript>
+      <p>
+        Your browser does not support JavaScript! Please visit this site with a
+        Javascript enabled browser
+      </p>
+    </noscript>
+  </body>
 </html>

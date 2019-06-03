@@ -54,4 +54,24 @@ ul {
 
 section {
   font-size: 1rem;
+  margin: auto;
+}
+
+@media (min-width: 0) {
+  section {
+  }
+}
+@media (min-width: $sm) {
+  section {
+  }
+}
+@media (min-width: $md) {
+  section {
+    max-width: $md;
+  }
+}
+@media (min-width: $lg) {
+  section {
+    max-width: $lg;
+  }
 }

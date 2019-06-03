@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import "../../styles/Projects.scss";
 
@@ -29,6 +30,13 @@ export default class Projects extends React.Component {
   render() {
     return (
       <section className="container">
+        <Helmet>
+          <title>Projects</title>
+          <meta
+            name="description"
+            content="Examples of Projects by Tom Jane, Developer"
+          />
+        </Helmet>
         <div className="row">
           <div className="col-sm-12">
             <div className="Projects--introduction">

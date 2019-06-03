@@ -1,10 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 import "../../styles/Skills.scss";
 
 export const Skills = props => {
   return (
     <section className="container">
+      <Helmet>
+        <title>Skills</title>
+        <meta
+          name="description"
+          content="Examples of Skills by Tom Jane, Developer"
+        />
+      </Helmet>
       <div className="row">
         <div className="col-sm-12">
           <div className="Skills">

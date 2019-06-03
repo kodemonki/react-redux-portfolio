@@ -6,8 +6,7 @@ import Featured from "./Featured";
 
 import "../../styles/Home.scss";
 
-const Myface = require('../../images/myface.jpg');
-
+const Myface = require("../../images/myface.jpg");
 
 export default class Home extends React.Component {
   render() {
@@ -26,8 +25,8 @@ export default class Home extends React.Component {
               </h4>
               <p>
                 I am a reliable and resourceful full stack senior developer. I
-                have been freelancing commercially for roughly 18 years and
-                coding for fun for over 28 years. I have recently taken on the
+                have been freelancing commercially for roughly 20 years and
+                coding for fun for over 30 years. I have recently taken on the
                 role of Technical lead and have enjoyed the extra challenges
                 involved in this.
               </p>

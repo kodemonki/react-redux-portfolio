@@ -1,0 +1,23 @@
+@import "./Globals.scss";
+
+.Events {
+  &--header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border: $border-style;
+    border-color: inherit;
+    padding: $pad;
+    margin-bottom: 1rem;
+  }
+  &--introduction {
+    text-align: center;
+    padding: $pad;
+  }
+  &--image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}

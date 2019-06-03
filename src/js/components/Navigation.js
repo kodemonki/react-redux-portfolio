@@ -20,6 +20,12 @@ export default class Navigation extends React.Component {
 
           <span>&bull;</span>
 
+          <NavLink to="/events" activeClassName="active">
+            <h3>Events</h3>
+          </NavLink>
+
+          <span>&bull;</span>
+
           <NavLink to="/arduino" activeClassName="active">
             <h3>Arduino</h3>
           </NavLink>

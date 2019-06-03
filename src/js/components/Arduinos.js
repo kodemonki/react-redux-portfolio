@@ -19,7 +19,7 @@ export default class Arduinos extends React.Component {
   }
   render() {
     return (
-      <section className="container">
+      <section>
         <Helmet>
           <title>Arduinos</title>
           <meta
@@ -27,37 +27,25 @@ export default class Arduinos extends React.Component {
             content="Examples of Arduino by Tom Jane, Developer"
           />
         </Helmet>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="Arduinos--introduction">
-              <p>
-                Arduino is an open-source electronic prototyping platform
-                enabling users to create interactive electronic objects.
-              </p>
-            </div>
-          </div>
+        <div className="Arduinos--introduction">
+          <p>
+            Arduino is an open-source electronic prototyping platform enabling
+            users to create interactive electronic objects.
+          </p>
         </div>
-        <div className="row">
-          <div className="Arduinos">
-            {this.props.arduinos.map((item, index) => {
-              return (
-                <div key={index} className="Arduino">
-                  <div className="col-sm-12">
-                    <div className="Arduino--header">{item.title}</div>
-                  </div>
-                  <div className="col-sm-8 offset-sm-2">
-                    <p>{this.strip(item.description)}</p>
-                  </div>
-                  <div className="col-sm-8 offset-sm-2">
-                    <img
-                      className="Arduino--image"
-                      src={item.screenshot ? item.screenshot : undefined}
-                    />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="Arduinos">
+          {this.props.arduinos.map((item, index) => {
+            return (
+              <div key={index} className="Arduino">
+                <div className="Arduino--header">{item.title}</div>
+                <p>{this.strip(item.description)}</p>
+                <img
+                  className="Arduino--image"
+                  src={item.screenshot ? item.screenshot : undefined}
+                />
+              </div>
+            );
+          })}
         </div>
       </section>
     );

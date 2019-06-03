@@ -10,7 +10,7 @@ const Myface = require("../../images/myface.jpg");
 export default class Home extends React.Component {
   render() {
     return (
-      <section className="container">
+      <section>
         <Helmet>
           <title>Home</title>
           <meta
@@ -45,13 +45,11 @@ export default class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div className="col-sm-12 col-lg-12">
+        <div className="">
           <div className="Home--divider">Featured Projects</div>
         </div>
-        <div className="col-sm-12 col-md-5 offset-md-1">
+        <div className="Home--row">
           <Featured project={this.props.projects[0]} color={this.props.color} />
-        </div>
-        <div className="col-sm-12 col-md-5">
           <Featured project={this.props.projects[1]} color={this.props.color} />
         </div>
       </section>

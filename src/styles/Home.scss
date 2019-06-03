@@ -4,6 +4,7 @@
   &--row {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media (min-width: 0) {
       flex-direction: column;
@@ -97,7 +98,32 @@
     border-color: inherit;
     margin-top: 20px;
     margin-bottom: 20px;
-    min-height: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media (min-width: 0) {
+      width: 90%;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    @media (min-width: $sm) {
+      min-height: 550px;
+      width: 40%;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    @media (min-width: $md) {
+      min-height: 520px;
+      width: 33.33%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @media (min-width: $lg) {
+      min-height: 520px;
+      width: 33.33%;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
 
     p {
       margin-bottom: 0px;

@@ -29,7 +29,7 @@ export default class Projects extends React.Component {
   }
   render() {
     return (
-      <section className="container">
+      <section>
         <Helmet>
           <title>Projects</title>
           <meta
@@ -37,34 +37,26 @@ export default class Projects extends React.Component {
             content="Examples of Projects by Tom Jane, Developer"
           />
         </Helmet>
-        <div className="row">
-          <div className="col-sm-12">
-            <div className="Projects--introduction">
-              <p>
-                Here are some of the projects I have been working on over the
-                last few years.
-              </p>
-            </div>
-          </div>
+        <div className="Projects--introduction">
+          <p>
+            Here are some of the projects I have been working on over the last
+            few years.
+          </p>
         </div>
         <div className="Projects">
-          <div className="row">
-            {this.props.projects.map((item, index) => {
-              return (
-                <div className="col-sm-12 col-md-6 col-lg-4" key={index}>
-                  <div className="Project">
-                    <img
-                      className="Project--image"
-                      src={item.screenshot ? item.screenshot : undefined}
-                    />
-                    <h3>{item.title}</h3>
-                    <p>{this.strip(item.description)}</p>
-                    {this.createLink(item.website)}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {this.props.projects.map((item, index) => {
+            return (
+              <div className="Project" key={index}>
+                <img
+                  className="Project--image"
+                  src={item.screenshot ? item.screenshot : undefined}
+                />
+                <h3>{item.title}</h3>
+                <p>{this.strip(item.description)}</p>
+                {this.createLink(item.website)}
+              </div>
+            );
+          })}
         </div>
       </section>
     );

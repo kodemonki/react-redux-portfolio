@@ -15,9 +15,9 @@ export const Header = props => {
   const textAlignRight = { textAlign: "right" };
 
   return (
-    <section className="container">
+    <section>
       <div className="Header">
-        <div className="row">
+        <div className="Header--row">
           <div className="Header--left-section">
             <h1>THOMAS JANE</h1>
             <div className="Header--skill-list">

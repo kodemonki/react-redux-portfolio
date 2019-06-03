@@ -6,7 +6,7 @@ import "../../styles/Navigation.scss";
 export default class Navigation extends React.Component {
   render() {
     return (
-      <section className="container">
+      <section>
         <nav className="Navigation">
           <NavLink exact to="/" activeClassName="active">
             <h3>Home</h3>

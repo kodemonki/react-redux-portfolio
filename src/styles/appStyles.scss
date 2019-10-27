@@ -2,12 +2,13 @@
 
 body {
   font-family: $theme-font;
-  color: $brand-primary;
+  color: black;
   background-color: white;
   font-size: 62.5%;
   line-height: 1.2;
   -webkit-perspective: 1000;
   border-color: $brand-primary;
+  transition: color 1s ease-in-out;
 }
 
 h1,

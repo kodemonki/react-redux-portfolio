@@ -70,12 +70,28 @@
         }
       }
 
-      var tempColor = getRandomColor();
-      while (getContrastYIQ(tempColor) == "black") {
-        tempColor = getRandomColor();
+      function getTempColor() {
+        var tempColor = getRandomColor();
+        while (getContrastYIQ(tempColor) == "black") {
+          tempColor = getRandomColor();
+        }
+        return tempColor;
       }
 
-      addCSSRule(sheet, "body", "color: #" + tempColor + " !important", 0);
+      function initialRandomColor(randomColor) {
+        addCSSRule(sheet, "body", "color: #" + randomColor + "", 0);
+      }
+
+      function applyRandomColor() {
+        console.log("applyRandomColor");
+        var randomColor = getTempColor();
+        document.getElementsByTagName("BODY")[0].style.color =
+          "#" + randomColor;
+      }
+
+      var tempColor = getTempColor();
+      initialRandomColor(tempColor);
+      setInterval(applyRandomColor, 1500);
 
       const initialColorState = {
         color: "#" + tempColor

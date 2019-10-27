@@ -22,8 +22,12 @@ export const Header = props => {
             <h1>THOMAS JANE</h1>
             <div className="Header--skill-list">
               HTML5&nbsp;/ CSS3&nbsp;/ JAVASCRIPT&nbsp;/ REACT&nbsp;/
-              REDUX&nbsp;/ PWA&nbsp;/ WEBPACK&nbsp;/ NODE&nbsp;/ GULP&nbsp;/
-              SASS&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/ PHP&nbsp;/ MYSQL
+              REDUX&nbsp;/ PWA&nbsp;/{" "}
+              <span style={{ whiteSpace: "nowrap" }}>
+                CREATE-REACT-APP&nbsp;/
+              </span>{" "}
+              WEBPACK&nbsp;/ SASS&nbsp;/ JEST&nbsp;/ AEM&nbsp;/ WORDPRESS&nbsp;/
+              PHP&nbsp;/ MYSQL
             </div>
           </div>
           <div className="Header--right-section" style={textAlignRight}>

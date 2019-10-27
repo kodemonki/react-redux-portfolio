@@ -9,6 +9,7 @@ import Home from "../components/Home";
 import Projects from "../components/Projects";
 import Arduinos from "../components/Arduinos";
 import { Skills } from "../components/Skills";
+import Printing3D from "../components/Printing3D";
 import { Events } from "../components/Events";
 
 import { getProjectsAction } from "../actions/getProjectsAction";
@@ -45,6 +46,8 @@ class App extends React.Component {
               />
             )}
           />
+
+          <Route path="/3D-Printing" component={Printing3D} />
           <Route path="/skills" component={Skills} />
           <Route path="/events" component={Events} />
 

@@ -47,10 +47,20 @@ export default class Projects extends React.Component {
           {this.props.projects.map((item, index) => {
             return (
               <div className="Project" key={index}>
-                <img
-                  className="Project--image"
-                  src={item.screenshot ? item.screenshot : undefined}
-                />
+                {item.website !== "" && (
+                  <a href={item.website}>
+                    <img
+                      className="Project--image"
+                      src={item.screenshot ? item.screenshot : undefined}
+                    />
+                  </a>
+                )}
+                {item.website === "" && (
+                  <img
+                    className="Project--image"
+                    src={item.screenshot ? item.screenshot : undefined}
+                  />
+                )}
                 <h3>{item.title}</h3>
                 <p>{this.strip(item.description)}</p>
                 {this.createLink(item.website)}
